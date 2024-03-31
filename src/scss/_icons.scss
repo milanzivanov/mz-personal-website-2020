@@ -1,0 +1,20 @@
+//
+.svg__icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.svg__icon--color {
+    fill: #15638e;
+}
+
+.svg__icon--cross,
+.svg__icon--hover:hover {
+    fill: $blue;
+}
+
+

@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;   
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-size: 100%;
+    position: relative;
+    font-family: "Roboto" sans-serif;
+}
+
+// srollbar
+body::-webkit-scrollbar {
+    width: 1em;
+}
+   
+body::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: #155799;
+}
+
+.wrapper-inner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper-inner-full {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.padding-tb {
+    padding: 20px 0;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+// custom arrows not in use for now
+// .navigation-custom-container {
+//     position: absolute;
+//     width: 100%;
+//     bottom: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 5px;
+
+//     .right-nav-custom.slick-arrow, 
+//     .left-nav-custom.slick-arrow {
+//         @include flexCHV;
+//         cursor: pointer;
+//         background-color: $white;
+//     }
+// }
+
+// hover.css
+.hvr-sweep-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s
+}
+
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+// animate.css
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
